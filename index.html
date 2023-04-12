@@ -133,14 +133,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/15_stickman_vk.loader.js'
+                    unityLoader.src = 'Build/16_stickman_vk.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/15_stickman_vk.data.unityweb',
-                                frameworkUrl: 'Build/15_stickman_vk.framework.js.unityweb',
-                                codeUrl: 'Build/15_stickman_vk.wasm.unityweb',
+                                dataUrl: 'Build/16_stickman_vk.data.unityweb',
+                                frameworkUrl: 'Build/16_stickman_vk.framework.js.unityweb',
+                                codeUrl: 'Build/16_stickman_vk.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'MasonInteractive',
                                 productName: 'Stickman Doll',
